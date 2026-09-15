@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .shop_container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .shop_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .shop_item a {
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .shop_item img {
+            width: 250px;
+            height: 150px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid white;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: right;
+            font-family: monospace;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Online Shop!!!</h1>
+
+    <div class="shop_container" >
+        <div class="shop_item" >
+            <img src="https://m.media-amazon.com/images/I/31epF-8N9LL.png">
+            <a href="https://www.amazon.com/">Amazon</a>
+        </div>
+
+        <div class="shop_item">
+            <img src="https://play-lh.googleusercontent.com/JbsgmuXGu3htCL6Tx7dSg3KYFtD7STWnWO5aQPBTG39_MsernJ3LGmGrhSQdS2C6bSR4zCXyHNdPOKumw1jt2A=s0-br30">
+            <a href="https://shopee.co.th/">Shopee</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer">© akulsuwa 2026</div>
+
+</body>
+</html>
