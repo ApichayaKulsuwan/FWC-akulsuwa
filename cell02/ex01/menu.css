@@ -1,0 +1,57 @@
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a, .toggle-label {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+
+.toggle-checkbox {
+    display: none;
+}
+
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.sub_menu li a {
+    color: black;
+}
+
+
+.toggle-checkbox:checked ~ .sub_menu {
+    display: block;
+}
+
+.menu li a:hover, .toggle-label:hover {
+    background-color: #555;
+}
+
+.sub_menu li a:hover {
+    background-color: #ddd;
+}
+
+    
