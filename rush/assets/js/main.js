@@ -15,6 +15,20 @@
   }
 
   /**
+   * Back Button Event Handler
+   */
+  const backBtn = document.querySelector('.back a');
+  if (backBtn) {
+    backBtn.addEventListener('click', (e) => {
+      // Smooth visual feedback on click before page transition
+      const btn = backBtn.querySelector('button');
+      if (btn) {
+        btn.style.transform = 'scale(0.95)';
+      }
+    });
+  }
+
+  /**
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
