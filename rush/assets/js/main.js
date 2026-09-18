@@ -46,6 +46,9 @@
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove();
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
     });
   }
 
@@ -83,6 +86,7 @@
       });
     }
   }
+  document.addEventListener('DOMContentLoaded', aosInit);
   window.addEventListener('load', aosInit);
 
   /**
